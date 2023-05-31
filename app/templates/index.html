@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block header %}
+    <h1 style="color:navy;">Welcome to Sinners Corner</h1>
+    <h4 style="color:navy;">There is much more to come!</h4>
+{% endblock %}
+
+{% block content %}
+    <h2 style="color:navy;">Hi! I'm {{first_name}} {{last_name}}</h2>
+    <h3 style="color:navy;">Currently I am {{job_title}}</h3>
+    <h5 style="color:navy;">BUT YOU COULD CALL ME PATRICK SWAYZE .... cuz guess what... I'm ghost</h5>
+    <br>
+    <br>
+    <br>
+    <button type="button" class="btn btn-lg btn-outline-danger">
+       <a href="./favorite_list.html" style="color:inherit; text-decoration:none">What is my favorite.....</a>
+    </button>
+{% endblock %}

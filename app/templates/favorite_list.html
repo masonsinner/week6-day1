@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Favorites {% endblock %}
+
+{% block header %}
+    <h1 style="color:navy;">Here is my favorite.......</h1>
+{% endblock %}
+
+{% block content %}
+    <h1 style="color:navy;">MLB TEAMS!</h1>
+    <br>
+    <ul>
+        {% for team in favorite_teams %}
+            <li style="list-style-type: none; padding: 25px 0; color: navy;">{{ team }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3 style="color:navy;">Just kidding no one likes the {{ favorite_teams[-1] }}</h3>
+    <h1 style="color:navy;"> DODGERS 2023 WORLD SERIES CHAMPS!</h1>
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fpeople.com%2Fthmb%2FDB9kYG1d9HRRqSeqUgIw4Kufiks%3D%2F1500x0%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%3Afocal(764x929%3A766x931)%2Fdodgers-3bc6251e1c094b348150a82a46891a81.jpg&tbnid=A4_Wlujewaz9aM&vet=12ahUKEwiD0qjt5p7_AhWuPN4AHeF5De8QMygFegUIARCzAQ..i&imgrefurl=https%3A%2F%2Fpeople.com%2Fsports%2Fwhat-to-know-about-2020-world-series-dodgers-rays%2F&docid=2qBsCFJJWDy93M&w=1500&h=1000&q=dodgers%20world%20series&ved=2ahUKEwiD0qjt5p7_AhWuPN4AHeF5De8QMygFegUIARCzAQ" alt="">
+{% endblock %}
